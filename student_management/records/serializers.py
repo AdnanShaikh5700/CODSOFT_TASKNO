@@ -53,4 +53,4 @@ class EnrollmentSerializer(serializers.ModelSerializer):
         if existing.exists():
           raise
         serializers.ValidationError("Student Is Already Enrolled In This Course.")
-        return data  
+    return data  
